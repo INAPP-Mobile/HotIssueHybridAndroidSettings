@@ -15,14 +15,6 @@ public class IMSetupStub extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 
-    	if ( !R.im_loaded ) {
-    		R.im_loaded = true;
-    		appResId = cordova.getActivity().getResources().getIdentifier("color_pick", "string", cordova.getActivity().getPackageName());
-    		R.string.color_pick = cordova.getActivity().getString(appResId);  
-    		appResId = cordova.getActivity().getResources().getIdentifier("setup", "xml", cordova.getActivity().getPackageName());
-    		R.xml.setup = appResId;
-    	}
-
         if (action.equals("show")) {
             String message = args.getString(0);
             this.show(message, callbackContext);
@@ -39,7 +31,7 @@ public class IMSetupStub extends CordovaPlugin {
 //        }
     	
     	Activity activity = this.cordova.getActivity();
-        Intent intent = new Intent(activity,IMSetup.class);
+        Intent intent = new Intent(activity,com.blogspot.imapp.imhotissue.IMSetup.class);
         activity.startActivity(intent);
     }
 }
