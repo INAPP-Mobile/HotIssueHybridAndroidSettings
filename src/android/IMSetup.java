@@ -45,7 +45,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Message;
 
-
+import com.blogspot.imapp.imhotissue.R;
 
 public class IMSetup extends PreferenceActivity
 {

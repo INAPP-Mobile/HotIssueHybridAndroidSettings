@@ -253,6 +253,7 @@ public class ColorPickerDialog extends Dialog {
         };
 
         setContentView(new ColorPickerView(getContext(), l, mInitialColor));
-        setTitle( R.string.color_pick );
+        int appResId = cordova.getActivity().getResources().getIdentifier("color_pick", "string", cordova.getActivity().getPackageName());
+        setTitle( cordova.getActivity().getString(appResId) );
     }
 }
