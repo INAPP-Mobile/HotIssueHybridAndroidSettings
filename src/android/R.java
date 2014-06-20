@@ -1,5 +1,5 @@
-
+package kr.imapp.hybrid.imhotissue.settings;
 
 public class R {
-	static int color_pick;
+	static String color_pick;
 }

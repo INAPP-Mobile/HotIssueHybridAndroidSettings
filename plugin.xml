@@ -45,7 +45,9 @@
 
         <source-file src="src/android/IMSetup.java" target-dir="src/kr/imapp/hybrid/imhotissue/settings" />
         <source-file src="src/android/ColorPickerDialog.java" target-dir="src/kr/imapp/hybrid/imhotissue/settings" /> 
-        
+        <source-file src="src/android/R.java" target-dir="src/kr/imapp/hybrid/imhotissue/settings" /> 
+        <source-file src="src/android/IMSetupStub.java" target-dir="src/kr/imapp/hybrid/imhotissue/settings" /> 
+
         <!--  drawable src/android/resources -->
         <resource-file src="src/android/res/values/strings.xml" target="res/values/strings.xml" />
         
