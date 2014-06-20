@@ -14,6 +14,13 @@ public class IMSetupStub extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+
+    	if ( !R.im_loaded ) {
+    		R.im_loaded = true;
+    		appResId = cordova.getActivity().getResources().getIdentifier("color_pick", "string", cordova.getActivity().getPackageName());
+    		R.color_pick = cordova.getActivity().getString(appResId);  
+    	}
+
         if (action.equals("show")) {
             String message = args.getString(0);
             this.show(message, callbackContext);
