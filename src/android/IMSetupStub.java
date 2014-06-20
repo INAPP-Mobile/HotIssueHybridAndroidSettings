@@ -18,7 +18,9 @@ public class IMSetupStub extends CordovaPlugin {
     	if ( !R.im_loaded ) {
     		R.im_loaded = true;
     		appResId = cordova.getActivity().getResources().getIdentifier("color_pick", "string", cordova.getActivity().getPackageName());
-    		R.color_pick = cordova.getActivity().getString(appResId);  
+    		R.string.color_pick = cordova.getActivity().getString(appResId);  
+    		appResId = cordova.getActivity().getResources().getIdentifier("setup", "xml", cordova.getActivity().getPackageName());
+    		R.xml.setup = appResId;
     	}
 
         if (action.equals("show")) {

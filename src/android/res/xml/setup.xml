@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/widget_settings">
+		<CheckBoxPreference android:key="transparent"
+			android:summary="@string/transparent_setup_msg" android:title="@string/transparent_setup"></CheckBoxPreference>
+		<CheckBoxPreference android:summary="@string/naver_setup_msg"
+			android:key="widget_naver" android:title="@string/naver_setup"
+			android:defaultValue="true"></CheckBoxPreference>
+		<CheckBoxPreference android:summary="@string/daum_setup_msg"
+			android:key="widget_daum" android:title="@string/daum_setup"
+			android:defaultValue="true"></CheckBoxPreference>
+		<CheckBoxPreference android:summary="@string/google_setup_msg"
+			android:key="widget_google" android:title="@string/google_setup"
+			android:defaultValue="true"></CheckBoxPreference>
+		<CheckBoxPreference android:summary="@string/nate_setup_msg"
+			android:key="widget_nate" android:title="@string/nate_setup"
+			android:defaultValue="true"></CheckBoxPreference>
+		<CheckBoxPreference android:summary="@string/zum_setup_msg"
+			android:key="widget_zum" android:title="@string/zum_setup"
+			android:defaultValue="true"></CheckBoxPreference>
+
+ 	 <Preference android:summary="@string/widget_text_color_msg" 
+	 	 android:title="@string/widget_text_color" android:key="widget_text_color"></Preference> 
+
+	<ListPreference android:summary="@string/flip_interval_setup_msg"
+		android:key="flip_interval" android:title="@string/flip_interval_setup"
+		android:entries="@array/flip_interval" android:defaultValue="6000"
+		android:entryValues="@array/flip_interval_value"></ListPreference>
+	
+
+	<ListPreference android:entryValues="@array/widget_update_value"
+		android:entries="@array/widget_update" android:key="interval"
+		android:summary="@string/interval_setup_msg" android:title="@string/interval_setup" android:defaultValue="600000"></ListPreference>
+			
+	<CheckBoxPreference android:title="@string/search_setup"
+		android:summary="@string/search_setup_msg" android:key="search_title"
+		android:defaultValue="false"></CheckBoxPreference>
+	<EditTextPreference android:key="keywords"
+		android:summary="@string/keywords_setup_msg" android:title="@string/keywords_setup"
+		android:dependency="search_title"></EditTextPreference>
+			
+	</PreferenceCategory>
+
+	<PreferenceCategory></PreferenceCategory>
+
+<!---->
+ 	 <Preference android:summary="@string/rate_setup_msg" 
+ 	 android:title="@string/rate_setup" android:key="rateit"></Preference> 
+	
+ 	 <Preference android:summary="@string/other_app_setup_msg" 
+ 	 android:title="@string/other_app_setup" android:key="other_app"></Preference> 
+<!-- -->
+
+	<Preference android:key="disclaimer_screen" android:title="@string/blog_setup"
+		android:summary="@string/blog_setup_msg"></Preference>
+
+
+
+</PreferenceScreen>
