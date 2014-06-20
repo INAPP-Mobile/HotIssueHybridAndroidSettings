@@ -50,6 +50,7 @@
 
         <!--  drawable src/android/resources -->
         <resource-file src="src/android/res/values/strings.xml" target="res/values/strings.xml" />
+        <resource-file src="src/android/res/values/arrays.xml" target="res/values/arrays.xml" />
         <resource-file src="src/android/res/xml/setup.xml" target="res/xml/setup.xml" />
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
