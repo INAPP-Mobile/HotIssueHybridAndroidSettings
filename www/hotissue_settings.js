@@ -25,10 +25,4 @@ Settings.prototype.show = function(successCallback, errorCallback) {
 
 
 //-------------------------------------------------------------------
-if(!window.plugins) {
-    window.plugins = {};
-}
-if (!window.plugins.Settings) {
-    window.plugins.Settings = new Settings();
-    console.log("### Settings registered");
-}
+module.exports = new Settings();
