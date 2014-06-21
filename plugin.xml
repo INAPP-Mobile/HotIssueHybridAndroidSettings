@@ -36,10 +36,12 @@
     <!-- android -->
     <platform name="android">
         <js-module src="www/hotissue_settings.js" name="settings">
+        	<clobbers target="window.plugins.Settings" />
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="HotIssueSettings"> 
                 <param name="android-package" value="kr.imapp.hybrid.imhotissue.settings.IMSetup"/>
+                 <clobbers target="cordova.plugins.Keyboard" />
             </feature>
         </config-file>
 
