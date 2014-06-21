@@ -39,9 +39,8 @@
         	<clobbers target="window.plugins.Settings" />
         </js-module>
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="HotIssueSettings"> 
+            <feature name="IMSetupStub"> 
                 <param name="android-package" value="kr.imapp.hybrid.imhotissue.settings.IMSetup"/>
-                 <clobbers target="cordova.plugins.Keyboard" />
             </feature>
         </config-file>
 
