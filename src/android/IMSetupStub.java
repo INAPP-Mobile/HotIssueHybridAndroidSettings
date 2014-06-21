@@ -2,13 +2,13 @@ package kr.imapp.hybrid.imhotissue.settings;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -33,6 +33,7 @@ public class IMSetupStub extends CordovaPlugin {
 //            callbackContext.error("Expected one non-empty string argument.");
 //        }
     	
+    	Log.e("imapp", "#####$$$$####");
     	Activity activity = this.cordova.getActivity();
         Intent intent = new Intent(activity,com.blogspot.imapp.imhotissue.IMSetup.class);
         activity.startActivity(intent);
