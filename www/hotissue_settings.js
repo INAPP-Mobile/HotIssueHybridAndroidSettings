@@ -30,4 +30,5 @@ if(!window.plugins) {
 }
 if (!window.plugins.Settings) {
     window.plugins.Settings = new Settings();
+    console.log("### Settings registered");
 }
