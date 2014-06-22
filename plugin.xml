@@ -32,7 +32,7 @@
     <engines>
       <engine name="cordova" version=">=3.1.0" /><!-- Needs cordova/urlutil -->
     </engines>
-    
+
     <!-- android -->
     <platform name="android">
         <js-module src="www/hotissue_settings.js" name="settings">
@@ -44,7 +44,18 @@
             </feature>
         </config-file>
 
+		<config-file target="AndroidManifest.xml" parent="/*">
+		    <!-- // to support Nexus7 -->
+		    <uses-feature
+		        android:name="android.hardware.camera"
+		        android:required="false" />
+		    <uses-feature
+		        android:name="android.hardware.telephony"
+		        android:required="false" />
+		</config-file>
+
         <source-file src="src/android/IMSetupStub.java" target-dir="src/kr/imapp/hybrid/imhotissue/settings" /> 
+
     </platform>
 
 </plugin>
