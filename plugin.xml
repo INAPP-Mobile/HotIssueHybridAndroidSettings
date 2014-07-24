@@ -86,10 +86,6 @@
 		</config-file>
 
         <source-file src="src/android/IMSetupStub.java" target-dir="src/kr/imapp/hybrid/imhotissue/settings" /> 
-        <source-file src="src/android/ColorPickerDialog.java" target-dir="src/com/blogspot/imapp/imhotissue" /> 
-        <source-file src="src/android/IMSetup.java" target-dir="src/com/blogspot/imapp/imhotissue" /> 
-        <source-file src="src/android/DataHolder.java" target-dir="src/com/blogspot/imapp/imhotissue" /> 
-        <source-file src="src/android/IMWidget.java" target-dir="src/com/blogspot/imapp/imhotissue" /> 
 
     </platform>
 
